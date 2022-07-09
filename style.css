@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+    --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+    --Verylightgray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 1em 0;
+    color: var(--Verylightgray);
+}
+.left,.mid,.right{
+    height: 30em;
+    width: 18rem;
+}
+.left{
+    background-color: var(--Brightorange);
+    border-bottom-left-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+.mid{
+    background-color: var(--Darkcyan);
+}
+.right{
+    background-color: var(--Verydarkcyan);
+    border-bottom-right-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+div{
+    color:var(--Transparentwhite);
+}
+.p{
+    font-size: 15px;
+    margin: 2.5rem 2rem;
+    line-height: 1.8em;
+}
+button{
+    display: block;
+    background-color: var(--Verylightgray);
+    border: none;
+    font-size: 15px;
+    width: 9rem;
+    padding: 0.8rem;
+    border-radius: 9em;
+    margin-top: 5rem;
+}
+.left-btn{
+    color: var(--Brightorange);
+    transition: 0.3s;
+}
+.mid-btn{
+    color: var(--Darkcyan);
+    transition: 0.3s;
+}
+.right-btn{
+    color: var(--Verydarkcyan);
+    transition: 0.3s;
+}
+.left-btn:hover{
+    color: var(--Verylightgray);
+    border: 2px solid var(--Verylightgray);
+    background-color: var(--Brightorange);
+}
+.mid-btn:hover{
+    color: var(--Verylightgray);
+    border: 2px solid var(--Verylightgray);
+    background-color: var(--Darkcyan);
+}
+.right-btn:hover{
+    color: var(--Verylightgray);
+    border: 2px solid var(--Verylightgray);
+    background-color: var(--Verydarkcyan);
+}
+@media only screen and (max-width:375px) {
+    body{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .left,.mid,.right{
+        margin: 0 1em;
+    }
+
+}
